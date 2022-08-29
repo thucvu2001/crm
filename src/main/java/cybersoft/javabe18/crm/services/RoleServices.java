@@ -23,4 +23,16 @@ public class RoleServices {
     public List<RoleModel> getAllRole() {
         return roleRepository.getAllRole();
     }
+
+    public Integer deleteRoleById(String id) {
+        return roleRepository.deleteRole(id);
+    }
+
+    public Integer updateRoleById(RoleModel roleModel) {
+        return roleRepository.updateRole(roleModel);
+    }
+
+    public Integer saveRole(String role, String description) {
+        return roleRepository.saveRole(role, description);
+    }
 }
